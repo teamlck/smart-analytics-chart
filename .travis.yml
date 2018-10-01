@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+- "node"
+
+sudo: false
+
+env:
+- NODE_ENV=test
+
+cache:
+  directories:
+  - node_modules
+
+branches:
+  only:
+  - master
+
+script:
+- "npm run test"
+
+notifications:
+  slack:
+    rooms:
+    - teamlck:xi2Cxwj6ryvcaGKZFjfywbkR#travis-ci
+    on_success: always
+    on_failure: always

@@ -1,0 +1,39 @@
+{
+  "name": "@teamlck/smart-analytics-chart",
+  "version": "0.0.1",
+  "description": "The chart for smart analytics data",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack-cli --config conf/webpack.prod.conf.js",
+    "start": "webpack-dev-server --config conf/webpack.dev.conf.js --hot --inline",
+    "lint": "eslint --ext .js src examples",
+    "test": "npm run lint"
+  },
+  "author": "norux <andrew@norux.me>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teamlck/smart-analytics-chart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/teamlck/smart-analytics-chart/issues"
+  },
+  "homepage": "https://github.com/teamlck/smart-analytics-chart#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "eslint": "^5.4.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
