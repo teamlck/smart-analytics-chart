@@ -4,9 +4,34 @@
   <meta charset="UTF-8">
   <title>Smart Analytics Chart</title>
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <%= (() => {
+    if (htmlWebpackPlugin.options.isMobile) {
+      return '<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">'
+    } else {
+      return '<meta name="viewport" content="width=device-width,initial-scale=1.0">'
+    }
+  })() %>
 </head>
 <body>
+  <div class="app">
+    <div class="header">
+      <div class="navigation">
+        <ul class="list">
+          <li class="item"><a href="#">Home</a></li>
+          <li class="item"><a href="#">MouseClick Chart</a></li>
+          <li class="item"><a href="#">MouseMove Chart</a></li>
+        </ul>
+      </div>
+    </div>
 
+
+    <%= (() => {
+      if (htmlWebpackPlugin.options.isMobile) {
+        return '<div class="footer">Mobile</div>'
+      } else {
+        return '<div class="footer">Desktop</div>'
+      }
+    })() %>
+  </div>
 </body>
 </html>

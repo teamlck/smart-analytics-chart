@@ -1,0 +1,35 @@
+
+$base-font-size: 10px;
+$base-font-family: 'Nanum Gothic -apple-system, BlinkMacSystemFont, sans-serif';
+$base-font-color: #111;
+$base-line-height: 1.15;
+
+html {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $base-font-color;
+}
+
+body {
+  font-family: $base-font-family;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}

@@ -1,0 +1,26 @@
+.header {
+  display: block;
+  max-width: 100%;
+  background: rgb(80, 80, 80);
+  height: 100px;
+  
+  .navigation {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+
+    .list {
+      display: flex;
+      
+      .item {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #ddd;
+        
+        &:not(:first-child) {
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}
