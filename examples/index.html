@@ -15,16 +15,28 @@
 <body>
   <div class="app">
     <div class="header">
-      <div class="navigation">
+      <div class="navigation" id="navbar">
         <ul class="list">
-          <li class="item"><a href="#">Home</a></li>
-          <li class="item"><a href="#">MouseClick Chart</a></li>
-          <li class="item"><a href="#">MouseMove Chart</a></li>
+          <li class="item"><a id="home">Home</a></li>
+          <li class="item"><a id="mouseClick">MouseClick Chart</a></li>
+          <li class="item"><a id="mouseMove">MouseMove Chart</a></li>
         </ul>
       </div>
     </div>
 
-
+    <div class="content">
+      <div class="home" id="contentHome">
+        this is home
+      </div>
+      <div class="chart">
+        <div class="mouse_click_chart" id="contentMouseClick" style="display: none">
+          this is mouse click chart
+        </div>
+        <div class="mouse_move_chart" id="contentMouseMove" style="display: none">
+          this is mouse move chart
+        </div>
+      </div>
+    </div>
     <%= (() => {
       if (htmlWebpackPlugin.options.isMobile) {
         return '<div class="footer">Mobile</div>'
