@@ -28,4 +28,12 @@ export class Canvas {
     this.context.rect(20,20,40,40);
     this.context.stroke();
   }
+
+  drawCircle () {
+    this.context.beginPath();
+    this.context.lineWidth = 1
+    this.context.strokeStyle = 'green'
+    this.context.arc(100, 75, 50, 0, 2 * Math.PI);
+    this.context.stroke();
+  }
 }

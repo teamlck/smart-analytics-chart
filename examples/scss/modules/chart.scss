@@ -10,6 +10,10 @@
     }
   }
   .mouse_move_chart_area {
-  
+    height: 400px;
+    
+    #mouse_move_chart {
+      height: 100%;
+    }
   }
 }
