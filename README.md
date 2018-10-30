@@ -1,4 +1,4 @@
-# Smart analytics Chart
+# Smart analytics ChartBase
 
 <!-- not published yet
 [![npm (scoped)](https://img.shields.io/npm/v/@teamlck/smart-analytics-chart.svg)](https://www.npmjs.com/package/@teamlck/smart-analytics-chart)

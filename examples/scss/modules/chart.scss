@@ -1,0 +1,15 @@
+.chart {
+  position: relative;
+  font-size: 1.5rem;
+  width: 100%;
+  .mouse_click_chart_area {
+    height: 200px;
+  
+    #mouse_click_chart {
+      height: 100%;
+    }
+  }
+  .mouse_move_chart_area {
+  
+  }
+}

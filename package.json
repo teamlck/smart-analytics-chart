@@ -1,7 +1,7 @@
 {
-  "name": "@teamlck/smart-analytics-chart",
+  "name": "TEST",
   "version": "0.0.1",
-  "description": "The chart for smart analytics data",
+  "description": "TEST",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack-cli --config conf/webpack.prod.conf.js",
@@ -19,6 +19,9 @@
     "url": "https://github.com/teamlck/smart-analytics-chart/issues"
   },
   "homepage": "https://github.com/teamlck/smart-analytics-chart#readme",
+  "peerDependencies": {
+    "d3-scale": "^2.1.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
@@ -26,6 +29,7 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.0",
+    "d3-scale": "^2.1.2",
     "eslint": "^5.4.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
@@ -38,6 +42,7 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9"
+    "webpack-dev-server": "^3.1.9",
+    "webpack-merge": "^4.1.4"
   }
 }

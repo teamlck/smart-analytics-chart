@@ -1,8 +1,9 @@
 
 // normalize & variables
-@import './normalize.scss';
+@import './normalize';
 
 // layout
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/content';
+@import './layout/index';
+
+// modules
+@import './modules/index';
