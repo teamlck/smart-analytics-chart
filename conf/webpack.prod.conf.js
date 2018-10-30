@@ -1,6 +1,8 @@
+const merge = require('webpack-merge')
 const path = require('path');
+const webpackCommonConfig = require('./webpack.common.conf')
 
-module.exports = {
+module.exports = merge(webpackCommonConfig, {
   mode: 'production',
   entry: './src/index.js',
   output: {
@@ -10,22 +12,5 @@ module.exports = {
     libraryTarget: "umd",
     umdNamedDefine: true
   },
-  devtool: 'cheap-module-source-map',
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /(node_modules)/
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          'css-loader',
-          'sass-loader'
-        ]
-      }
-    ]
-  },
   plugins: []
-};
+})
