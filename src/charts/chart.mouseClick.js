@@ -5,6 +5,5 @@ export class ChartMouseClick extends ChartBase {
     super(id, opt)
 
     this.canvas.drawRect()
-
   }
 }
